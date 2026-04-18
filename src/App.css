@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: #e2e8f0;
+}
+
+th, td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #232530;
+}
+
+th {
+  background-color: #121319;
+  font-weight: 500;
+  color: #a0aab8;
+  font-size: 14px;
+}
+
+tr:hover {
+  background-color: #1a1c26;
+}
+
+.holdings-table {
+  background-color: #151720;
+  border: 1px solid #232530;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+h2 {
+  color: #fff;
+}
