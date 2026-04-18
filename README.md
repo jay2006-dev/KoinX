@@ -52,7 +52,10 @@ This project implements a React application demonstrating a Tax Loss Harvesting 
 *(In a real GitHub environment, screenshots of the Pre/Post cards and interactive table would be placed here)*
 
 <img width="1883" height="852" alt="image" src="https://github.com/user-attachments/assets/2da0327c-04a5-4663-b0c8-7eb8e0dead80" />
-<img width="1876" height="841" alt="image" src="https://github.com/user-attachments/assets/d569d3b6-bd37-4de6-9dcd-d1ed32c3e83d" />
+
+Holdings
+
+<img width="1878" height="858" alt="image" src="https://github.com/user-attachments/assets/f4a768db-5e2e-476b-b41c-ba4973d1f24b" />
 
 
 ## 💡 Assumptions
