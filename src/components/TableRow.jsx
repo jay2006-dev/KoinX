@@ -24,16 +24,16 @@ const TableRow = ({ holding, index }) => {
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           {holding?.logo && <img src={holding.logo} alt={holding.coin} width="28" height="28" style={{ borderRadius: '50%' }} />}
           <div>
-            <div style={{ fontWeight: '500', color: '#fff' }}>{holding?.coinName ?? holding?.coin}</div>
-            <div style={{ fontSize: '12px', color: '#a0aab8' }}>{holding?.coin}</div>
+            <div style={{ fontWeight: '500', color: 'var(--text-main)' }}>{holding?.coinName ?? holding?.coin}</div>
+            <div style={{ fontSize: '12px', color: 'var(--secondary-text)' }}>{holding?.coin}</div>
           </div>
         </div>
       </td>
       <td style={{ textAlign: 'right' }}>
-        <div style={{ fontWeight: '500', color: '#fff' }} tooltip={holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 })}>{holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 }) + " " + holding?.coin ?? "-"}</div>
-        <div style={{ fontSize: '12px', color: '#a0aab8' }}>{formatCurrency(holding?.averageBuyPrice)}/{holding?.coin}</div>
+        <div style={{ fontWeight: '500', color: 'var(--text-main)' }} tooltip={holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 })}>{holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 }) + " " + holding?.coin ?? "-"}</div>
+        <div style={{ fontSize: '12px', color: 'var(--secondary-text)' }}>{formatCurrency(holding?.averageBuyPrice)}/{holding?.coin}</div>
       </td>
-      <td style={{ textAlign: 'right', color: '#fff' }} tooltip={formatCurrency(holding?.currentPrice)}>{formatCurrency(holding?.currentPrice)}</td>
+      <td style={{ textAlign: 'right', color: 'var(--text-main)' }} tooltip={formatCurrency(holding?.currentPrice)}>{formatCurrency(holding?.currentPrice)}</td>
       <td style={{ textAlign: 'right' }}>
         <div style={{ color: (holding?.stcg?.gain ?? 0) >= 0 ? '#10b981' : '#ef4444', fontWeight: '500' }} tooltip={formatCurrency(holding?.stcg?.gain)}>
           {formatCurrency(holding?.stcg?.gain)}
@@ -44,7 +44,7 @@ const TableRow = ({ holding, index }) => {
           {formatCurrency(holding?.ltcg?.gain)}
         </div>
       </td>
-      <td style={{ textAlign: 'right', color: '#fff' }} tooltip={isSelected ? holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 }) + " " + holding?.coin : "-"}>
+      <td style={{ textAlign: 'right', color: 'var(--text-main)' }} tooltip={isSelected ? holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 }) + " " + holding?.coin : "-"}>
         {isSelected ? holding?.totalHolding?.toLocaleString('en-US', { maximumFractionDigits: 6 }) + " " + holding?.coin : "-"}
       </td>
     </tr>

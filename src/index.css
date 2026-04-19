@@ -3,8 +3,22 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0d0e14;
+  --bg-main: #0d0e14;
+  --text-main: #ffffff;
+  --secondary-text: #a0aab8;
+  --card-dark-bg: #1a1b23;
+  --table-border: #232530;
+
+  color: var(--text-main);
+  background-color: var(--bg-main);
+}
+
+[data-theme='light'] {
+  --bg-main: #f3f4f6;
+  --text-main: #111827;
+  --secondary-text: #6b7280;
+  --card-dark-bg: #ffffff;
+  --table-border: #e5e7eb;
 }
 
 body {
@@ -12,6 +26,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 #root {
